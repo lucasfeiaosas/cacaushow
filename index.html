@@ -1,3 +1,5 @@
+<!-- CÓDIGO COMPLETO ABAIXO -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -79,14 +81,14 @@
 
     .game-board {
       display: grid;
-      grid-template-columns: repeat(4, 90px); /* 🔥 Tamanho reduzido */
+      grid-template-columns: repeat(4, 90px);
       grid-gap: 12px;
       z-index: 2;
     }
 
     .card {
-      width: 90px; /* 🔥 Reduzido */
-      height: 90px; /* 🔥 Reduzido */
+      width: 90px;
+      height: 90px;
       background-color: #ffffff;
       border: 2px solid #ccc;
       cursor: pointer;
@@ -173,7 +175,7 @@
 
 <div class="overlay" id="overlay">
   <div>🎉 <strong>PARABÉNS! VOCÊ CONSEGUIU!</strong> 🎉</div>
-  <button onclick="window.location.href='https://user-cacaushow.shop/collections/all'">RECEBER PRÊMIO</button>
+  <button onclick="window.location.href='https://user-cacaushow.shop/collections/all'">VOCÊ GANHOU 70% DE DESCONTO</button>
 </div>
 
 <script>
@@ -206,7 +208,7 @@
   }
 
   window.onload = () => {
-    startTimer(300); // 5 minutos
+    startTimer(300);
   };
 
   for (let i = 0; i < 30; i++) {
